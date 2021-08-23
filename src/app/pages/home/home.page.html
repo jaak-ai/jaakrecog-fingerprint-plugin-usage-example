@@ -1,0 +1,56 @@
+<!--
+ * JAAK-IT SAPI DE CV - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by root < jesus.serrano@jaak-it.com >, 2021
+ * Support <support@jaak-it.com>
+-->
+
+<ion-content>
+  <div class="container">
+    <div class="container-fluid">
+      <app-logo-header></app-logo-header>
+      <ion-list-header mode="ios">
+        <ion-label>JAAKRECOG Fingerprint plugin</ion-label>
+      </ion-list-header>
+      <p class="ps-3">
+        Esta aplicación(<small>Aplicación demostrativa</small>) es un ejemplo de
+        uso del plugin JAAKRECOG Fingerprint.
+      </p>
+
+      <p class="text-center">Opciones:</p>
+
+      <div class="p-3">
+        <ion-button
+          [routerLink]="['/form']"
+          color="secondary"
+          expand="block"
+          class="mb-3"
+        >
+          <ion-icon slot="start" name="arrow-forward"></ion-icon>
+          Iniciar
+        </ion-button>
+
+        <ion-button
+          href="https://github.com/jaak-it/jaakrecog-fingerprint-capacitor"
+          color="light"
+          expand="block"
+          class="mb-3"
+        >
+          <ion-icon slot="start" name="logo-github"></ion-icon>
+          Visitar repositorio
+        </ion-button>
+
+        <ion-button
+          href="https://www.npmjs.com/package/jaakrecog-fingerprint"
+          color="light"
+          expand="block"
+        >
+          <ion-icon slot="start" name="logo-npm"></ion-icon>
+          Visitar librería npm
+        </ion-button>
+      </div>
+    </div>
+  </div>
+  <app-watermark></app-watermark>
+</ion-content>

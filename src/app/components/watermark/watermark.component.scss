@@ -1,0 +1,20 @@
+.footerbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0.5;
+    padding-bottom: 1rem;
+    h4 {
+      font-weight: 600;
+      color: white;
+      font-style: oblique;
+      margin-bottom: 0;
+      font-size: 15px;
+    }
+  
+    img {
+      height: 40px;
+    }
+  }

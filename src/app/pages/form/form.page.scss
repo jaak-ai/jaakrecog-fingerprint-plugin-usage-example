@@ -1,0 +1,34 @@
+/*
+ * * JAAK-IT SAPI DE CV - All Rights Reserved
+ * * Unauthorized copying of this file, via any medium is strictly prohibited
+ * * Proprietary and confidential
+ * * Written by root < jesus.serrano@jaak-it.com >, 2021
+ * * Support <support@jaak-it.com>
+ */
+
+ion-content {
+  --background: var(--ion-color-primary);
+}
+
+ion-label {
+  color: var(--ion-color-secondary);
+}
+
+ion-input, ion-textarea {
+  background: white;
+  border-radius: 10px;
+  --border-radius: 10px;
+  margin-bottom: 1rem;
+  --padding-start: 10px;
+}
+
+ion-button.form-btn {
+    max-width: 360px;
+    min-width: 300px
+}
+
+@media (min-width: 992px) {
+    .container {
+      max-width: 768px !important;
+    }
+  }
