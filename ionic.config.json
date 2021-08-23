@@ -1,0 +1,7 @@
+{
+  "name": "fingerprintPluginUsage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
