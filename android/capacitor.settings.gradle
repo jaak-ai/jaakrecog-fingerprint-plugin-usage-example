@@ -13,3 +13,6 @@ project(':capacitor-keyboard').projectDir = new File('../node_modules/@capacitor
 
 include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../node_modules/@capacitor/status-bar/android')
+
+include ':jaakrecog-fingerprint'
+project(':jaakrecog-fingerprint').projectDir = new File('../../jaakrecog-fingerprint-capacitor/android')

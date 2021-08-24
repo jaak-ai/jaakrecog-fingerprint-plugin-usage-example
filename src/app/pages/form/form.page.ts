@@ -9,7 +9,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastController } from '@ionic/angular';
-
+import { FingerPrint } from 'jaakrecog-fingerprint';
 @Component({
   selector: 'app-form',
   templateUrl: './form.page.html',
@@ -51,6 +51,7 @@ export class FormPage implements OnInit {
     if(this.form.valid){
       /* Execute plugin */
       console.log(this.form.value.accessKey);
+      FingerPrint.callFingerAcequisition(this.form.value.accessKey);
     }else {
       const alert = await this.createToast('Verifica el formulario', 'danger');
       await alert.present();
