@@ -28,6 +28,7 @@
     "@capacitor/status-bar": "1.0.2",
     "@ionic/angular": "^5.5.2",
     "bootstrap": "^5.1.0",
+    "husky": "^7.0.2",
     "jaakrecog-fingerprint": "file:../jaakrecog-fingerprint-capacitor",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
