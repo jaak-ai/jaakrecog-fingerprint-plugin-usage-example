@@ -55,11 +55,12 @@ export class FormPage implements OnInit {
       console.log(accessKey);
       
       
-      if(accessKey==""){
+      if(accessKey=="00000"){
         accessKey="ae00738e523998b0c782b06c2c2314675ff01fe1710b006dd3f3f22b6e4ca7388445c16d3b837b7ad89b0ab1ee10ec336def3780d916f6bc103dc380ec0d4df7"
       }
 
-      FingerPrint.callFingerAcequisition(this.form.value.accessKey);
+      var accessKey=this.form.value.accessKey
+       FingerPrint.callFingerAcequisition({ value:accessKey });
    
     }else {
       const alert = await this.createToast('Verifica el formulario', 'danger');
