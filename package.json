@@ -29,7 +29,7 @@
     "@ionic/angular": "^5.5.2",
     "bootstrap": "^5.1.0",
     "husky": "^7.0.2",
-    "jaakrecog-fingerprint": "file:../jaakrecog-fingerprint-capacitor",
+    "jaakrecog-fingerprint": "^1.0.0-dev.13",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
