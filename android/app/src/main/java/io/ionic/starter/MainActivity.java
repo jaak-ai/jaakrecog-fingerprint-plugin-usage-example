@@ -1,5 +1,21 @@
 package io.ionic.starter;
-import com.jaakrecog.fingerprint;
-import com.getcapacitor.BridgeActivity;
+import android.os.Bundle;
+import android.util.Log;
 
-public class MainActivity extends BridgeActivity {}
+import com.getcapacitor.BridgeActivity;
+import com.jaakrecog.fingerprint.FingerPrintPlugin;
+
+
+public class MainActivity extends BridgeActivity {
+
+@Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    try{
+
+      registerPlugin(FingerPrintPlugin.class);
+    }catch (Exception ex){
+      Log.e("Plugin exception",ex.getMessage());
+    }
+  }
+}

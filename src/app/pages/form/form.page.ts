@@ -9,7 +9,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastController } from '@ionic/angular';
-import { FingerPrint } from 'jaakrecog-fingerprint';
+import { FingerPrint, FingerPrintPlugin } from 'jaakrecog-fingerprint';
+//FingerPrintPlugin
 @Component({
   selector: 'app-form',
   templateUrl: './form.page.html',
@@ -30,7 +31,7 @@ export class FormPage implements OnInit {
     this.form = this.formBuilder.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      accessKey: ['', [Validators.required]],
+      accessToken: ['', [Validators.required]],
     });
   }
 
@@ -50,12 +51,22 @@ export class FormPage implements OnInit {
   async initPlugin(): Promise<void> {
     if(this.form.valid){
       /* Execute plugin */
-      console.log(this.form.value.accessKey);
-      FingerPrint.callFingerAcequisition(this.form.value.accessKey);
+     var accessToken="ae00738e523998b0c782b06c2c2314675ff01fe1710b006dd3f3f22b6e4ca7388445c16d3b837b7ad89b0ab1ee10ec336def3780d916f6bc103dc380ec0d4df7"
+     var isDevelop=false
+  
+ 
+      const options={accessToken:accessToken,is_production:isDevelop}
+      FingerPrint.callFingerAcquisition(options).then(resp => resp.eventIdLeft)
+      .then(data => {  
+        
+        alert(data)
+      
+      });
+
     }else {
       const alert = await this.createToast('Verifica el formulario', 'danger');
       await alert.present();
     }
-    
+
   }
 }
