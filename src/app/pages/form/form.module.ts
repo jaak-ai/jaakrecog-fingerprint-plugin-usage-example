@@ -17,6 +17,7 @@ import { FormPageRoutingModule } from './form-routing.module';
 import { FormPage } from './form.page';
 import { WatermarkComponent } from '../../components/watermark/watermark.component';
 import { LogoHeaderComponent } from '../../components/logo-header/logo-header.component';
+import { AlertModalSuccessComponent } from '../../components/alert-modal-success/alert-modal-success.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,6 @@ import { LogoHeaderComponent } from '../../components/logo-header/logo-header.co
     IonicModule,
     FormPageRoutingModule,
   ],
-  declarations: [FormPage, WatermarkComponent, LogoHeaderComponent],
+  declarations: [FormPage, WatermarkComponent, LogoHeaderComponent, AlertModalSuccessComponent],
 })
 export class FormPageModule {}
