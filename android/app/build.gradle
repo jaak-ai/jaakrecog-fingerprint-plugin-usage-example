@@ -27,10 +27,10 @@ apply plugin: 'com.android.application'
 }
 
 repositories {
+  mavenCentral()
   maven {
-    url "artifactregistry://us-central1-maven.pkg.dev/jaakrecog-1to1-similarity/jaakrecog-maven"
+    url "https://devtools.jaakrecog.com/repository/jaakrecog/"
   }
-
 
 }
 
@@ -51,8 +51,7 @@ dependencies {
 }
 
 apply from: 'capacitor.build.gradle'
-apply plugin: "com.google.cloud.artifactregistry.gradle-plugin"
- try {
+try {
     def servicesJSON = file('google-services.json')
     if (servicesJSON.text) {
         apply plugin: 'com.google.gms.google-services'

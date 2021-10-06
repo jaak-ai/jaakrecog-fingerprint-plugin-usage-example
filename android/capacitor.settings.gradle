@@ -15,4 +15,4 @@ include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../node_modules/@capacitor/status-bar/android')
 
 include ':jaakrecog-fingerprint'
-project(':jaakrecog-fingerprint').projectDir = new File('../../jaakrecog-fingerprint-capacitor/android')
+project(':jaakrecog-fingerprint').projectDir = new File('../node_modules/jaakrecog-fingerprint/android')
