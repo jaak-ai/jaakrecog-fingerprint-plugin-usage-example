@@ -1,8 +1,27 @@
-# jaakrecog-fingerprint-plugin-usage-example
+<div id="top"></div>
 
-# Descripción
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://jaakrecog.com/assets/jaakrecog-logo.svg" alt="Logo" width="161" height="39">
+  </a>
 
-This project was developed for demonstration use and exemplification of how to use JAAKRecog Fingerprint Plugin with capacitor (https://github.com/jaak-it/jaakrecog-fingerprint-capacitor)
+  <h3 align="center">JAAKRECOG FINGERPRINT PLUGIN USAGE EXAMPLE</h3>
+
+  <p align="center">
+    This project was developed for demonstration use and exemplification of how to use JAAKRecog Fingerprint Plugin with capacitor (https://github.com/jaak-it/jaakrecog-fingerprint-capacitor)
+    <br />
+    <a href="https://www.jaakrecog.com"><strong>Conoce nuestros productos»</strong></a>
+    <br />
+    <br />
+    <a href=""https://www.jaakrecog.com/Demo">Descarga nuestra demo</a>
+    ·
+    <a href="https://jaak-it.atlassian.net/servicedesk/customer/portal/2">Report Bug</a>
+    ·
+    <a href="https://jaak-it.atlassian.net/servicedesk/customer/portal/2">Request Feature</a>
+  </p>
+</div>
+
 
 # Estado y versiones
 
