@@ -68,20 +68,15 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Install capacitor core
-        run: npm install @capacitor/core
-
-      - name: Install capacitor cli
-        run: npm install @capacitor/cli --save-dev
+      - name: Install capacitor components
+        run: |
+          npm install @capacitor/core
+          npm install @capacitor/cli --save-dev
+          npm install @capacitor/android
+          npm install -g @ionic/cli
 
       - name: Install JAAKRecog FingerPrint plugin
         run: npm install jaakrecog-fingerprint@1.0.0-dev.13
-
-      - name: Install Capcitor for Android
-        run: npm install @capacitor/android
-
-      - name: Install Ionic cli
-        run: npm install -g @ionic/cli
 
       - name: Buildd Ionic Android app
         run: ionic build android
@@ -106,6 +101,5 @@ jobs:
         with:
           name: Build Artifacts
           path: android/app/build/outputs/
-
 
 

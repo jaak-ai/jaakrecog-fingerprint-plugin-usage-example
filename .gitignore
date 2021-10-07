@@ -31,3 +31,4 @@ npm-debug.log*
 /www
 /android/work/_temp/keystore/jaakrecog.jks
 /android/work/_temp/keystore/keystore_base64_encoded.txt
+/android/play_config.json
