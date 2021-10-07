@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/compare/v1.0.0...v1.0.1) (2021-10-07)
+
+
+### Bug Fixes
+
+* apk build in Android ([079e36a](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/commit/079e36ae5e9388c7da24f38451cbb13402af3ce2))
+
 # 1.0.0 (2021-10-07)
 
 
