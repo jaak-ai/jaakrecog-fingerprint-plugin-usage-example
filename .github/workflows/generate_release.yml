@@ -62,9 +62,31 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install capacitor core
+        run: npm install @capacitor/core
+
+      - name: Install capacitor core
+        run: npm install @capacitor/cli --save-dev
+
+      - name: Install JAAKRecog FingerPrint plugin
+        run: npm install jaakrecog-fingerprint@1.0.0-dev.13
+
+      - name: Install Capcitor for Android
+        run: npm install @capacitor/android
+
+      - name: Build App
+        run: npx cap sync android
+
       - name: Make gradlew executable
         working-directory: android
         run: chmod +x ./gradlew
+
       - name: build prod
         working-directory: android
         run: ./gradlew app:bundleRelease
@@ -72,6 +94,7 @@ jobs:
           SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
+
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
