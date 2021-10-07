@@ -30,3 +30,4 @@ npm-debug.log*
 /plugins
 /www
 /android/work/_temp/keystore/jaakrecog.jks
+/android/work/_temp/keystore/keystore_base64_encoded.txt
