@@ -26,18 +26,18 @@
 # Estado y versiones
 
 
-### Prerequisitos
+# Prerequisitos
 
-Instalar nodejs según corresponda a su sistema operativo (https://nodejs.org/en/download/), se requiere la versión 12.22 o superior
+* Instalar nodejs según corresponda a su sistema operativo (https://nodejs.org/en/download/), se requiere la versión 12.22 o superior
 
-Instalar los componentes de capacitor 
+* Instalar los componentes de capacitor 
 
 ```sh
 npm install @capacitor/core
 npm install @capacitor/cli --save-dev
 ```
 
-Se debe de tener instalado
+* Se debe de tener instalado
 
 Android Studio para la compilación y ejecución de proyectos Android
 
@@ -48,9 +48,9 @@ Xcode para los proyecto de iOS
 https://apps.apple.com/us/app/xcode
 
 
-### Como instalar
+# Como instalar
 
-Ejecute el comando 
+* Ejecute el comando para instalar la versión que necesite del componente de JAAKRecog-fingerprint
 
 Version estable
 
@@ -63,7 +63,7 @@ Version de desarrollo
 npm install jaakrecog-fingerprint@1.0.0-dev.13
 ```
 
-Para la ejecución de iOS es necesario la instalación de cocoapods(https://guides.cocoapods.org/using/getting-started.html#installation)
+* Para la ejecución de iOS es necesario la instalación de cocoapods(https://guides.cocoapods.org/using/getting-started.html#installation)
 
 ```sh
 sudo gem install cocoapods
@@ -75,8 +75,7 @@ or
 brew install cocoapods
 ```
 
-
-Instalar los componentes para la plataforma
+* Instalar los componentes para la plataforma
 
 Android
 ```sh
@@ -91,7 +90,7 @@ npm install @capacitor/ios
 Este comando actulizara a la ultima versión publicada del componente
 
 
-Creamos el proyecto para Android o iOS segun corresponda
+* Creamos el proyecto para Android o iOS segun corresponda
 
 ```sh
 npx cap add android
@@ -107,13 +106,13 @@ Construimos la app
 ionic build
 ```
 
-Descargamos y compilamos las depenciencias para su ejecución nativa
+* Descargamos y compilamos las depenciencias para su ejecución nativa
 
 ```sh
 npx cap sync
 ```
 
-Si se requiere una versión especifica para un dispositivo se puede ejecutar
+* Si se requiere una versión especifica para un dispositivo se puede ejecutar
 
 para android 
 ```sh
@@ -125,7 +124,7 @@ para IOs
 npx cap sync ios
 ```
 
-Lanzar el proyecto
+* Lanzar el proyecto
 
 ```sh
 ionic cap build android
@@ -147,10 +146,6 @@ o
 npx cap open ios
 ```
 
-Esperar que el proyecto termine de sincronizar
-
-
-
-# 
+* Esperar que el proyecto termine de sincronizar
 
 
