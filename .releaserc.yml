@@ -1,9 +1,6 @@
 branches:
   - master
 
-  - name: staging
-    prerelease: beta
-
   - name: develop
     prerelease: dev
 
