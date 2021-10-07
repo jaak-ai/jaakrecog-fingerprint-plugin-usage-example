@@ -1,5 +1,5 @@
 {
-	"appId": " com.jaakrecog.fingerprintusage",
+	"appId": "com.jaakrecog.fingerprintusage",
 	"appName": "fingerprintPluginUsage",
 	"webDir": "www",
 	"bundledWebRuntime": false

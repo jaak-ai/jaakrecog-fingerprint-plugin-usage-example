@@ -16,6 +16,10 @@
 		"classpath": "com.capacitorjs.plugins.statusbar.StatusBarPlugin"
 	},
 	{
+		"pkg": "@sentry/capacitor",
+		"classpath": "io.sentry.capacitor.SentryCapacitor"
+	},
+	{
 		"pkg": "jaakrecog-fingerprint",
 		"classpath": "com.jaakrecog.fingerprint.FingerPrintPlugin"
 	}
