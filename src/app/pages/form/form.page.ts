@@ -11,6 +11,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ModalController, ToastController } from '@ionic/angular';
 import { FingerPrint, FingerPrintPlugin } from 'jaakrecog-fingerprint';
 import { AlertModalSuccessComponent } from '../../components/alert-modal-success/alert-modal-success.component';
+import * as Sentry from "@sentry/capacitor";
+
 //FingerPrintPlugin
 @Component({
   selector: 'app-form',
@@ -32,18 +34,17 @@ export class FormPage implements OnInit {
   async initPlugin(): Promise<void> {
     if (this.form.valid) {
       /* Execute plugin */
-      const accessToken =
-        'ae00738e523998b0c782b06c2c2314675ff01fe1710b006dd3f3f22b6e4ca7388445c16d3b837b7ad89b0ab1ee10ec336def3780d916f6bc103dc380ec0d4df7';
       const isDevelop = false;
 
       // eslint-disable-next-line @typescript-eslint/naming-convention
-      const options = { accessToken, is_production: isDevelop };
+      const options = { accessToken: this.form.value.accessToken, is_production: isDevelop };
       FingerPrint.callFingerAcquisition(options)
         .then((resp) => resp.eventIdLeft)
         .then((data) => {
           this.createAlert(data);
         }).catch(async (e) => {
           console.log(e);
+          Sentry.captureException(e);
           const alert = await this.createToast('Ha ocurrido un error', 'danger');
           await alert.present();
         });
