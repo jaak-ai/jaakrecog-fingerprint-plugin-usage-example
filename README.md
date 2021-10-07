@@ -60,7 +60,7 @@ npm install jaakrecog-fingerprint
 
 Version de desarrollo
 ```sh
-npm install jaakrecog-fingerprint@1.0.0-dev.13
+npm install jaakrecog-fingerprint@<version>
 ```
 
 * Para la ejecución de iOS es necesario la instalación de cocoapods(https://guides.cocoapods.org/using/getting-started.html#installation)
