@@ -71,7 +71,7 @@ jobs:
       - name: Install capacitor core
         run: npm install @capacitor/core
 
-      - name: Install capacitor core
+      - name: Install capacitor cli
         run: npm install @capacitor/cli --save-dev
 
       - name: Install JAAKRecog FingerPrint plugin
@@ -79,6 +79,12 @@ jobs:
 
       - name: Install Capcitor for Android
         run: npm install @capacitor/android
+
+      - name: Install Ionic cli
+        run: npm install -g @ionic/cli
+
+      - name: Buildd Ionic Android app
+        run: ionic build android
 
       - name: Build App
         run: npx cap sync android
