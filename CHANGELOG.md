@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/compare/v1.0.1...v1.0.2) (2021-10-07)
+
+
+### Bug Fixes
+
+* add missing ionic ([5f49774](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/commit/5f4977429813adc64acbbfc9c4b0d97ac90981ac))
+
 ## [1.0.1](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/compare/v1.0.0...v1.0.1) (2021-10-07)
 
 
