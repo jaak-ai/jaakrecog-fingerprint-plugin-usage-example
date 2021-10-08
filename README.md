@@ -148,4 +148,12 @@ npx cap open ios
 
 * Esperar que el proyecto termine de sincronizar
 
+# Actualizar libreria de jaakrecog-fingerprint
+
+````sh
+npm install jaakrecog-fingerprint@<version>
+npx cap sync android
+ionic capacitor build android
+````
+
 
