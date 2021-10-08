@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/compare/v1.1.0...v1.2.0) (2021-10-08)
+
+
+### Features
+
+* add sentry monitoring ([0d39118](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/commit/0d3911830429f6bec30560d74f1370fc2f6a6bfb))
+* integrate version 19 dev ([ee3a37b](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/commit/ee3a37be3ca9a84448dcfd2859d64912b3a8d817))
+
 # [1.1.0](https://github.com/jaak-it/jaakrecog-fingerprint-plugin-usage-example/compare/v1.0.2...v1.1.0) (2021-10-07)
 
 
