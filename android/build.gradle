@@ -21,9 +21,11 @@ apply from: "variables.gradle"
 allprojects {
     repositories {
         google()
-      maven {
-        url "https://plugins.gradle.org/m2/"
-      }
+        jcenter()
+        maven {
+          url "https://devtools.jaakrecog.com/repository/com.jaakit.fingeracquisition/"
+        }
+
     }
 }
 
