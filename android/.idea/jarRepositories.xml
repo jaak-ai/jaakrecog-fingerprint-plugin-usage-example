@@ -41,5 +41,10 @@
       <option name="name" value="maven2" />
       <option name="url" value="https://devtools.jaakrecog.com/repository/jaakrecog/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://devtools.jaakrecog.com/repository/com.jaakit.fingeracquisition/" />
+    </remote-repository>
   </component>
 </project>

@@ -37,7 +37,7 @@
     "@sentry/capacitor": "^0.4.0",
     "bootstrap": "^5.1.0",
     "husky": "^7.0.2",
-    "jaakrecog-fingerprint": "^1.0.0-dev.19",
+    "jaakrecog-fingerprint": "^1.0.0-dev.20",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
